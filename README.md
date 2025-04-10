@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio! This website showcases my journey as an AI/ML student and indie builder. Built using **Next.js**, **Tailwind CSS**, and components from **shadcn/ui**, this site reflects my skills, projects, and weekly career progress updates.
 
-![Screenshot of Portfolio](./public/preview.png) <!-- Replace with actual image path -->
+![image](https://github.com/user-attachments/assets/92dacf8d-6dbd-4a00-8cdf-d1c1528d920a)
 
 ## 🌐 Live Site
 
@@ -85,12 +85,11 @@ This is a personal project — feel free to fork it or use it as inspiration! Co
 ## 📬 Contact
 
 - Twitter: [@samarjamal](https://twitter.com/samarjamal)
-- GitHub: [@samarjamal](https://github.com/samarjamal)
-- Email: contact@samar.dev
+- GitHub: [@samarjamal](https://github.com/samarcodesinpython)
+- Email: samarjamal326@gmai.com
 
 ---
 
 ## 🔐 License
 
 MIT © 2025 Samar Jamal
-```
