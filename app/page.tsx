@@ -3,10 +3,11 @@ import { Github, Linkedin, Mail, Twitter } from "lucide-react"
 import Link from "next/link"
 import ContactForm from "./components/contact-form"
 import ProjectCard from "./components/project-card"
-import TechStack from "./components/tech-stack"
-import BlogPreview from "./components/blog-preview"
 import { ThemeToggle } from "@/components/theme-toggle"
 import TypingAnimation from "./components/typing-animation"
+import ProjectDashboard from "./components/project-dashboard"
+import TechTimeline from "./components/tech-timeline"
+import TechGlobe from "./components/tech-globe"
 
 export default function Page() {
   return (
@@ -24,11 +25,17 @@ export default function Page() {
               <Link href="#projects" className="transition-colors hover:text-foreground/80">
                 Projects
               </Link>
-              <Link href="#blog" className="transition-colors hover:text-foreground/80">
-                Progress Log
+              <Link href="#dashboard" className="transition-colors hover:text-foreground/80">
+                Dashboard
+              </Link>
+              <Link href="#timeline" className="transition-colors hover:text-foreground/80">
+                Timeline
+              </Link>
+              <Link href="#globe" className="transition-colors hover:text-foreground/80">
+                Tech Globe
               </Link>
               <Link href="/career-skills" className="transition-colors hover:text-foreground/80">
-                Career Skills
+                PESE 400
               </Link>
               <Link href="#contact" className="transition-colors hover:text-foreground/80">
                 Contact
@@ -104,6 +111,18 @@ export default function Page() {
           </div>
         </section>
 
+        <section id="dashboard" className="py-12 md:py-24 lg:py-32">
+          <ProjectDashboard />
+        </section>
+
+        <section id="timeline" className="py-12 md:py-24 lg:py-32">
+          <TechTimeline />
+        </section>
+
+        <section id="globe" className="py-12 md:py-24 lg:py-32">
+          <TechGlobe />
+        </section>
+
         <section id="projects" className="py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">Projects</h2>
@@ -123,50 +142,6 @@ export default function Page() {
                 tags={["Python", "Web", "Social Impact"]}
               />
             </div>
-          </div>
-        </section>
-
-        <section id="blog" className="py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">
-              Progress Log
-            </h2>
-            <div className="grid gap-6 md:grid-cols-2">
-              <BlogPreview
-                title="LeetCode Week 12: Graph Algorithms"
-                date="April 5, 2024"
-                excerpt="This week I tackled 7 graph problems on LeetCode, focusing on DFS and BFS implementations. Here's what I learned..."
-                link="/blog/leetcode-week-12"
-                tags={["LeetCode", "Algorithms", "Graphs"]}
-              />
-              <BlogPreview
-                title="Building My First CNN from Scratch"
-                date="March 28, 2024"
-                excerpt="Instead of using high-level libraries, I implemented a convolutional neural network using only NumPy. Here's the process..."
-                link="/blog/cnn-from-scratch"
-                tags={["Deep Learning", "Python", "CNN"]}
-              />
-
-              <BlogPreview
-                title="Weekly Update: Learning Transformers"
-                date="March 8, 2024"
-                excerpt="This week I've been diving deep into transformer architecture. Here are my notes and implementation attempts..."
-                link="/blog/transformers-notes"
-                tags={["NLP", "Transformers", "Deep Learning"]}
-              />
-            </div>
-            <div className="mt-10 text-center">
-              <Button variant="outline">View All Posts</Button>
-            </div>
-          </div>
-        </section>
-
-        <section className="py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">
-              Tech Stack
-            </h2>
-            <TechStack />
           </div>
         </section>
 

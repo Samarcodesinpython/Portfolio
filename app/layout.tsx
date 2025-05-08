@@ -5,8 +5,7 @@ import { Inter } from "next/font/google"
 import "./globals.css"
 import type React from "react"
 import NowPlaying from "./components/now-playing"
-import MouseMoveEffect from "@/components/mouse-move-effect"
-import Link from "next/link"
+import MouseMoveEffect from "@/app/components/mouse-move-effect"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -35,6 +34,3 @@ export default function RootLayout({
     </html>
   )
 }
-
-
-import './globals.css'
