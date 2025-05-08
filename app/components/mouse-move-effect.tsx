@@ -39,6 +39,6 @@ export default function MouseMoveEffect() {
       style={{
         background: `radial-gradient(650px at ${mousePosition.x}px ${mousePosition.y}px, rgba(0, 217, 255, 0.15), transparent 45%)`,
       }}
-    />
+    ></div>
   )
 }

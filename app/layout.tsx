@@ -5,7 +5,7 @@ import { Inter } from "next/font/google"
 import "./globals.css"
 import type React from "react"
 import NowPlaying from "./components/now-playing"
-import MouseMoveEffect from "@/app/components/mouse-move-effect"
+import MouseMoveEffect from "./components/mouse-move-effect"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -26,7 +26,6 @@ export default function RootLayout({
       <body className={cn("min-h-screen bg-background font-sans antialiased relative", inter.className)}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           <MouseMoveEffect />
-
           {children}
           <NowPlaying />
         </ThemeProvider>
